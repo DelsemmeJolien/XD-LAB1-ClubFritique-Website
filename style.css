@@ -1,87 +1,117 @@
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+:root{
+  --red: #780116;
+  --beige: #F5F1DC;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+/* nav */
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1em 1.5em;
+    max-width: 100%;
+    background-color: var(--beige);
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+/* logo navigatie - footer */
+nav a.logo, footer a.logo {
+    display: inline-block; 
+    height: 43px;
+    width: 120px;
+    background-image: url(/images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: 150px 43px;
+
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+/* hamburger menu */
+#hamburger{
+    display: none;
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+#hamburger:checked ~ .slidemenu {
+    transform: translateX(0);
+    display: block;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+.hamburger {
+    display: inline-block;
+    position: absolute;
+    right: 1em;
+    top: 1.5em;
+    width: 20px;
+    height: 18px;
+    cursor: pointer;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+.hamburger span {
+    background-color: var(--red);
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    cursor: pointer;
+    transition: all 0.3s;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.hamburger span:nth-child(1) {
+    top: 8px;
 }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+.hamburger span:nth-child(2) {
+    top: 16px;
 }
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+#hamburger:checked ~ .hamburger span:nth-child(1) {
+    opacity: 0;
+}
+
+#hamburger:checked ~ .hamburger span:nth-child(2) {
+    transform: rotate(45deg);
+    top: 6px;
+
+}
+
+#hamburger:checked ~ .hamburger span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 6px;
+}
+
+/* nav menu */
+
+.slidemenu {
+    background-color: #fff;
+    transform: translateX(100%);
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    top: 4em;
+    left: 0;
+    padding-top: 1em;
+    transition: all 0.6s ease-in;
+    z-index: 999;
+}
+
+.slidemenu div a {
+    text-decoration: none;
+    text-align: center;
+    font-family: "Kannada mn";
+    font-weight: normal;
+    font-size: 2em;
+    color: var(--red);
+}
+
+.slidemenu .navLinks, .slidemenu .navButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding-top: 2em;
+}
+
+.slidemenu a:hover {
+    color: var(--red);
 }
