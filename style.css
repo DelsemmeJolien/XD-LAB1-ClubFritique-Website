@@ -1,6 +1,7 @@
 :root{
   --red: #780116;
   --beige: #F5F1DC;
+  --offblack: #102022;
 }
 
 body{
@@ -143,25 +144,91 @@ nav a.logo, footer a.logo {
   color: orange;
 }
 
-/* hero */
+.slidemenu .navButtons a:hover {
+  background-color: orange;
+  color: var(--beige);
+}
 
-.hero, .over, .events, .merch, .registreer {
+/* hero */
+.hero, .over, .events, .registreer {
   margin: 1em;
 }
 
 a {
   text-decoration: none;
-  color: var(--beige);
 }
 
-.navButtons .btn {
+.navButtons .navBtn {
+  background-color: var(--red);
   color: var(--beige);
-  padding: 0.2em;
+  border-radius: 20px;
+  padding: 0.em 1em;
+  align-self: center;
+  text-align: center;
+  width: 80%;
 }
 
 .btn{
-  border-radius: 20px;
+  display: inline-block;
   background-color: var(--red);
+  color: var(--beige);
+  border-radius: 20px;
+  padding: 0.5em 1em;
+  align-self: center;
+  text-align: center;
+  width: 150px;
+}
+
+.btnLight {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--red);
+  border: 2px solid var(--red);
+  border-radius: 20px;
+  padding: 0.5em 1em;
+  align-self: center;
+  text-align: center;
+  width: 150px;
+}
+
+/* events */
+.events {
+  text-align: center;
+}
+
+.events article {
+  background-color: var(--offblack);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.events article .infoEvent {
+  padding: 1em;
+  text-align: left;
+}
+
+.events article .infoEvent h2 {
+  line-height: 0.6;
+}
+
+.events article p {
+  color: var(--beige);
+}
+
+.events article img {
+  width: 100%;
+  border-radius: 30px;
+  border: 1px solid var(--offblack);
+}
+
+/* merch */
+.merch{
+  background-color: var(--beige);
+  text-align: center;
+  padding: 1em;
 }
 
 /* registreer */
@@ -182,23 +249,16 @@ a {
   margin-bottom: 2em;
 }
 
-.registreer button {
-  background-color: var(--red);
-  color: var(--beige);
-  border-radius: 20px;
-  padding: 1em;
-  width: 180px;
-  align-self: center;
-}
-
 /* footer */
-
 footer{
   background-color: var(--beige);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.5em;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+
 }
 
 footer a{
