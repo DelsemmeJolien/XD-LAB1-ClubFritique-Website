@@ -40,11 +40,11 @@ h3{
 
 /* nav */
 nav {
-    display: flex;
-    align-items: center;
-    padding: .5em 1em;
-    max-width: 100%;
-    background-color: var(--beige);
+  display: flex;
+  align-items: center;
+  padding: .5em 1em;
+  max-width: 100%;
+  background-color: var(--beige);
 }
 
 /* logo navigatie - footer */
@@ -150,50 +150,76 @@ nav a.logo, footer a.logo {
 }
 
 /* hero */
-.hero, .over, .events, .registreer {
-  margin: 1em;
+.hero, .events, .registreer {
+  margin:1em;
+  padding-bottom: 2em;
 }
 
 a {
   text-decoration: none;
 }
 
+.navbtn, .btn, .btnLight{
+  align-self: center;
+  text-align: center;
+}
+
 .navButtons .navBtn {
   background-color: var(--red);
   color: var(--beige);
   border-radius: 20px;
-  padding: 0.em 1em;
-  align-self: center;
-  text-align: center;
-  width: 80%;
+  padding: 0.2em 1em;
+}
+
+.btn, .btnLight{
+  display: inline-block;
+  border-radius: 20px;
+  padding: 0.5em 1em;
+  width: 95%;
 }
 
 .btn{
-  display: inline-block;
   background-color: var(--red);
   color: var(--beige);
-  border-radius: 20px;
-  padding: 0.5em 1em;
-  align-self: center;
-  text-align: center;
-  width: 150px;
 }
 
 .btnLight {
-  display: inline-block;
   background-color: transparent;
   color: var(--red);
   border: 2px solid var(--red);
-  border-radius: 20px;
-  padding: 0.5em 1em;
-  align-self: center;
-  text-align: center;
-  width: 150px;
+}
+
+.heroBtn{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.hero p {
+  padding-bottom: 1em;
+}
+
+/* over */
+.over {
+  background-color: var(--beige);
+  padding:1em;
+  padding-bottom: 2em;
+  text-align: left;
+}
+
+.over img {
+  width: 400px;
+}
+
+.over .imgSnacks {
+  border: 2px solid var(--red);
 }
 
 /* events */
 .events {
   text-align: center;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 .events article {
@@ -211,7 +237,7 @@ a {
 }
 
 .events article .infoEvent h2 {
-  line-height: 0.6;
+  line-height: 1;
 }
 
 .events article p {
@@ -229,6 +255,7 @@ a {
   background-color: var(--beige);
   text-align: center;
   padding: 1em;
+  margin-bottom: 2em;
 }
 
 /* registreer */
@@ -237,7 +264,8 @@ a {
   flex-direction: column;
   border: 1px solid var(--red);
   border-radius: 30px;
-  padding: 1em;
+  padding: 2em 1em;
+  margin-bottom: 2em;
 }
 
 .registreer input {
