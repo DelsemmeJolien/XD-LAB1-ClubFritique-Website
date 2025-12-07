@@ -155,14 +155,13 @@ nav a.logo, footer a.logo {
 /* hero */
 .snackBackground{
   position: absolute;
-  inset: 0;
   z-index: 0;
 }
 
 .snack{
   position: absolute;
   width: 60px;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .snack-1{
@@ -312,6 +311,37 @@ a {
   margin-bottom: 2em;
 }
 
+.carousel {
+  display: flex;
+  gap: 1em;
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+
+  padding: 1em;
+}
+
+.carousel-item{
+  scroll-snap-align: center;
+
+  display: flex;
+  flex: 0 0 100%;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid var(--red);
+  border-radius: 20px;
+
+  height: 300px;
+  width: 380px;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
 /* registreer */
 .registreer {
   display: flex;
@@ -368,4 +398,16 @@ footer .footerLeft, footer .footerRight{
   gap: 1em;
 }
 
+/* tablet */
+@media (min-width: 800px){
+  .carousel-item{
+    flex: 0 0 50%;
+  }
+}
 
+/* desktop */
+@media (min-width: 1024px) {
+  .carousel-item{
+    flex: 0 0 33%;
+  }
+}
