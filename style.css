@@ -153,9 +153,51 @@ nav a.logo, footer a.logo {
 }
 
 /* hero */
+.snackBackground{
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.snack{
+  position: absolute;
+  width: 60px;
+  opacity: 0.9;
+}
+
+.snack-1{
+  top: 15%;
+  right: 35%;
+}
+.snack-2{
+  top: 22%;
+  right: 25%;
+}
+.snack-3{
+  top: 20%;
+  right: 12%;
+}
+.snack-4{
+  top: 14%;
+  right: 2%;
+}
+.snack-5{
+  top: 28%;
+  right: 8%;
+}
+.snack-icon{
+  top: 12%;
+  right: 22%;
+  width: 48px;
+}
+
 .hero, .events, .registreer {
   margin:1em;
   padding-bottom: 2em;
+}
+
+.hero h1 {
+  width: 60%;
 }
 
 a {
