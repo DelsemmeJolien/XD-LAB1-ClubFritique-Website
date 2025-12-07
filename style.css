@@ -19,10 +19,13 @@ h1, h2, h3{
 
 h1{
   font-size: 3em;
+  margin-bottom: 0em;
 }
 
 h2{
   font-size: 2.5em;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 h3{
@@ -220,15 +223,11 @@ a {
 .over .imgSnacks {
   border: 2px solid var(--red);
   width: 400px;
+  margin-bottom: 2em;
 }
 
 .over .imgMockup {
   width: 300px;
-}
-
-.over h2{
-  margin-bottom: 0;
-  margin-top: 1em;
 }
 
 
@@ -251,10 +250,6 @@ a {
 .events article .infoEvent {
   padding: 1em;
   text-align: left;
-}
-
-.events article .infoEvent h2 {
-  line-height: 1;
 }
 
 .events article p {
