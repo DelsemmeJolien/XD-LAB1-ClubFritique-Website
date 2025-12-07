@@ -52,7 +52,7 @@ nav a.logo, footer a.logo {
   display: inline-block; 
   height: 4em;
   width: 9em;
-  background-image: url(/images/logo.svg);
+  background-image: url(./images/logo.svg);
   background-repeat: no-repeat;
 }
 
