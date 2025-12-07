@@ -195,7 +195,7 @@ a {
   gap: 1em;
 }
 
-.hero p {
+.hero p, .over p {
   padding-bottom: 1em;
 }
 
@@ -207,13 +207,30 @@ a {
   text-align: left;
 }
 
-.over img {
-  width: 400px;
+.over .clubfritique, .over .platform {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.over .clubfritique img, .over .platform img {
+  align-self: center;
 }
 
 .over .imgSnacks {
   border: 2px solid var(--red);
+  width: 400px;
 }
+
+.over .imgMockup {
+  width: 300px;
+}
+
+.over h2{
+  margin-bottom: 0;
+  margin-top: 1em;
+}
+
 
 /* events */
 .events {
