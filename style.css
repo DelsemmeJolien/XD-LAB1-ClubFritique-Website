@@ -128,7 +128,8 @@ nav a.logo, footer a.logo {
 
 .slidemenu div a {
   text-decoration: none;
-  text-align: center;
+  text-align: right;
+  padding-right: 1em;
   font-family: "brother-1816-printed", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -203,23 +204,28 @@ a {
   text-decoration: none;
 }
 
-.navbtn, .btn, .btnLight{
+.btn, .btnLight{
   align-self: center;
   text-align: center;
 }
 
 .navButtons .navBtn {
-  background-color: var(--red);
-  color: var(--beige);
-  border-radius: 20px;
-  padding: 0.2em 1em;
+  align-self: flex-end;
+  text-align: center;
 }
 
 .btn, .btnLight{
-  display: inline-block;
   border-radius: 20px;
   padding: 0.5em 1em;
-  width: 95%;
+  width: 150px;
+}
+
+.navButtons .navBtn {
+  background-color: var(--red);
+  color: var(--beige);
+  padding: 0.3em 1em;
+  width: 150px;
+  border-radius: 20px;
 }
 
 .btn{
@@ -271,7 +277,6 @@ a {
   width: 300px;
 }
 
-
 /* events */
 .events {
   text-align: center;
@@ -301,6 +306,11 @@ a {
   width: 100%;
   border-radius: 30px;
   border: 1px solid var(--offblack);
+}
+
+.events a {
+  display: inline-block;
+  width: 150px;
 }
 
 /* merch */
