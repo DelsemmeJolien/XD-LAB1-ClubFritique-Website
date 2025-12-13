@@ -263,8 +263,13 @@ a {
   text-align: left;
 }
 
-.over .clubfritique img, .over .platform img {
-  align-self: center;
+.over .clubfritique .overImg, .over .platform .overImg {
+  text-align : center;
+}
+
+.over .platform .content .btn {
+  display: inline-block;
+  width: 150px;
 }
 
 .over .imgSnacks {
@@ -473,6 +478,10 @@ footer .footerLeft, footer .footerRight {
   .over a {
     align-self: flex-start;
   }
+
+  .over .clubfritique .overImg, .over .platform .overImg {
+    text-align : center;
+  }
   
   .events{
     max-width: 500px;
@@ -486,7 +495,7 @@ footer .footerLeft, footer .footerRight {
 
   .registreer{
     padding: 2em 2em;
-    max-width: 700px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -520,8 +529,35 @@ footer .footerLeft, footer .footerRight {
 
 /* desktop */
 @media (min-width: 1024px) {
-  .carousel-item{
-    flex: 0 0 33%;
+  
+  .over .clubfritique, .over .platform{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    gap: 2.5em;
+  }
+
+  .over .clubfritique .content, .over .platform .content{
+    width: 60%;
+  }
+
+  .over .clubfritique .overImg, .over .platform .overImg {
+    text-align : center;
+    width: 40%;
+  }
+
+  .over .platform {
+    flex-direction: row-reverse;
+  }
+
+  .over .imgSnacks, .over .imgMockup {
+    margin-bottom: 0;
+    justify-self: center;
+  }
+
+  .over .imgMockup {
+    width: 250px;
   }
 
   .events article {
@@ -542,6 +578,10 @@ footer .footerLeft, footer .footerRight {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+   .carousel-item{
+    flex: 0 0 33%;
   }
 
   footer {
