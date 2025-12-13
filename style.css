@@ -523,4 +523,29 @@ footer .footerLeft, footer .footerRight {
   .carousel-item{
     flex: 0 0 33%;
   }
+
+  .events article {
+    background-color: var(--offblack);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1em;
+    margin-bottom: 2em;
+  }
+
+  .events article img {
+    width: 45%;
+    object-fit: fill;
+  }
+
+  .events{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer {
+    padding-top: 2em;
+    align-items: flex-start;
+  }
 }
