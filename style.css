@@ -156,13 +156,14 @@ nav a.logo, footer a.logo {
 /* hero */
 .snackBackground{
   position: absolute;
-  z-index: 0;
+  z-index: -1;
 }
 
 .snack{
   position: absolute;
   width: 60px;
-  opacity: 1;
+  opacity: 0.9;
+
 }
 
 .snack-1{
@@ -189,6 +190,10 @@ nav a.logo, footer a.logo {
   top: 12%;
   right: 22%;
   width: 48px;
+}
+
+.snack-6, .snack-7, .snack-8, .snack-9, .snack-10, .snack-icon2 {
+  display: none;
 }
 
 .hero, .events, .registreer {
@@ -437,6 +442,10 @@ footer .footerLeft, footer .footerRight {
     top: 1.8em;
   }
 
+  .snack {
+    width: 70px;
+  }
+
   .snack-1{
     top: 18%;
     right: 32%;
@@ -468,7 +477,7 @@ footer .footerLeft, footer .footerRight {
   }
 
   .hero p{
-    max-width: 80%;
+    max-width: 75%;
   }
 
   .over {
@@ -537,7 +546,7 @@ footer .footerLeft, footer .footerRight {
 }
 
 /* desktop */
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   nav {
     padding: .5em 3.5em;
   }
@@ -599,10 +608,52 @@ footer .footerLeft, footer .footerRight {
   }
 
   .snack{
-    position: absolute;
-    width: 70px;
-    opacity: 1;
+    width: 100px;
   }
+  .snack-1{
+    top: 24%;
+    right: 31%;
+  }
+  .snack-2{
+    top: 37%;
+    right: 31%;
+  }
+  .snack-3{
+    top: 29%;
+    right: 23%;
+  }
+  .snack-4{
+    top: 44%;
+    right: 22%;
+  }
+  .snack-5{
+    top: 22%;
+    right: 13%;
+  }
+  
+  .snack-6, .snack-10, .snack-icon2 {
+    display: inline;
+  }
+
+  .snack-6{
+    display: inline;
+    top: 44%;
+    right: 12%;
+  }
+  .snack-10{
+    top: 56%;
+    right: 28%;
+  }
+  .snack-icon{
+    top: 16%;
+    right: 23%;
+    width: 56px;
+  }
+  .snack-icon2{
+    top: 59%;
+    right: 18%;
+    width: 56px;
+  } 
 
   .over .clubfritique, .over .platform{
     display: flex;
