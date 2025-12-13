@@ -162,7 +162,7 @@ nav a.logo, footer a.logo {
 .snack{
   position: absolute;
   width: 60px;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .snack-1{
@@ -252,7 +252,7 @@ a {
 /* over */
 .over {
   background-color: var(--beige);
-  padding:1em;
+  padding: 1em;
   padding-bottom: 2em;
   text-align: left;
 }
@@ -357,6 +357,17 @@ a {
   margin-bottom: 2em;
 }
 
+.registreer .formName, .registreer .formGegevens{
+  display: flex;
+  flex-direction: column;
+}
+
+.registreer .formName .column{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .registreer input {
   height: 32px;
   border-top: none;
@@ -411,9 +422,83 @@ footer .footerLeft, footer .footerRight {
 }
 
 /* tablet */
-@media (min-width: 650px){
+@media (min-width: 744px){
+  .snack-1{
+    top: 18%;
+    right: 32%;
+  }
+  .snack-2{
+    top: 25%;
+    right: 22%;
+  }
+  .snack-3{
+    top: 23%;
+    right: 12%;
+  }
+  .snack-4{
+    top: 17%;
+    right: 2%;
+  }
+  .snack-5{
+    top: 31%;
+    right: 8%;
+  }
+  .snack-icon{
+    top: 15%;
+    right: 22%;
+    width: 48px;
+  }   
+
+  .hero, .events, .registreer {
+    margin: 2.5em;
+  }
+
+  .hero p{
+    max-width: 80%;
+  }
+
+  .over {
+    padding: 2.5em;
+  }
+
+  .over p{
+    max-width: 90%;
+  }
+
+  .heroBtn{
+    flex-direction: row;
+    gap: 2.5em;
+  }
+
+  .over a {
+    align-self: flex-start;
+  }
+  
+  .events{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .carousel-item{
-    flex: 0 0 50%;
+    flex: 0 0 60%;
+  }
+
+  .registreer{
+    padding: 2em 2em;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .registreer .formName{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+  }
+
+  .registreer a {
+    align-self: flex-start;
   }
 
   footer {
