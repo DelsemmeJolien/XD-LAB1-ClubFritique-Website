@@ -370,9 +370,10 @@ a {
   border-radius: 50%;
   background: var(--red50);
   display: inline-block;
-  transition: transform 160ms ease, background-color 160ms ease;
+
 }
 
+/* hulp gevraagd met AI Copilot om de dots interactief te maken */
 .merch:has(#slide-1:target) .dots a[href="#slide-1"],
 .merch:has(#slide-2:target) .dots a[href="#slide-2"],
 .merch:has(#slide-3:target) .dots a[href="#slide-3"],
