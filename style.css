@@ -1,5 +1,6 @@
 :root{
   --red: #780116;
+  --red50: #7801177b;
   --beige: #F5F1DC;
   --offblack: #102022;
 }
@@ -336,7 +337,6 @@ a {
   gap: 1em;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
   padding: 1em;
 }
 
@@ -355,6 +355,35 @@ a {
 .carousel-item img {
   height: 100%;
   object-fit: cover;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--red50);
+  display: inline-block;
+  transition: transform 160ms ease, background-color 160ms ease;
+}
+
+.merch:has(#slide-1:target) .dots a[href="#slide-1"],
+.merch:has(#slide-2:target) .dots a[href="#slide-2"],
+.merch:has(#slide-3:target) .dots a[href="#slide-3"],
+.merch:has(#slide-4:target) .dots a[href="#slide-4"],
+.merch:has(#slide-5:target) .dots a[href="#slide-5"] {
+  background-color: var(--red);
+  transform: scale(1.25);
+}
+
+.dot:hover {
+  transform: scale(1.15);
 }
 
 /* registreer */
