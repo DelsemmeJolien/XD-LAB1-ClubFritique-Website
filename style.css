@@ -449,7 +449,6 @@ footer .socials {
 footer .footerNav{
   display: flex;
   flex-direction: row;
-  flex: 1fr 1fr;
   align-items: flex-start;
   gap:5em;
 }
